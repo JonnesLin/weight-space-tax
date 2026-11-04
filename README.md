@@ -1,6 +1,6 @@
 # No Free Lunch: The Tax of Weight-Space Programming
 
-Code, prompts and results for the blog post *No Free Lunch: The Tax of Weight-Space Programming* (Jinhong Lin, 2026).
+Code, prompts and results for the blog post [*No Free Lunch: The Tax of Weight-Space Programming*](https://jonneslin.github.io/weight-space-tax-en.html) (Jinhong Lin, 2026).
 
 The post is a follow-up to [Sparks of Weight-Space Programming](https://rikiyat.github.io/blog/weight-space-programming/) (Takehi et al., 2026). In their Experiment 8, an LLM edited 131,072 weights of Qwen3.5-0.8B and fixed its reasoning loops. We measure what that edit costs outside math. Copying long code, continuing templates and repeating on request get worse. Across every strength of the edit we tested, the strengths that improve math also hurt copying.
 
@@ -109,6 +109,6 @@ The code is released under the MIT License. The prompts in `data/` derive from t
   year         = {2026},
   month        = nov,
   howpublished = {Blog post},
-  url          = {}
+  url          = {https://jonneslin.github.io/weight-space-tax-en.html}
 }
 ```
