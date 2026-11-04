@@ -1,0 +1,343 @@
+{
+ "doses": [
+  0.0,
+  1.0,
+  2.0,
+  3.0,
+  6.0
+ ],
+ "summary": {
+  "A_random_repeat/first_half": {
+   "0.0": {
+    "n": 16320,
+    "nll": 14.729659080505371,
+    "top1": 0.0
+   },
+   "1.0": {
+    "n": 16320,
+    "nll": 14.734216690063477,
+    "top1": 0.0,
+    "top1_lost": 0,
+    "top1_gained": 0
+   },
+   "2.0": {
+    "n": 16320,
+    "nll": 14.739076614379883,
+    "top1": 0.0,
+    "top1_lost": 0,
+    "top1_gained": 0
+   },
+   "3.0": {
+    "n": 16320,
+    "nll": 14.74405288696289,
+    "top1": 0.0,
+    "top1_lost": 0,
+    "top1_gained": 0
+   },
+   "6.0": {
+    "n": 16320,
+    "nll": 14.7609224319458,
+    "top1": 0.0,
+    "top1_lost": 0,
+    "top1_gained": 0
+   }
+  },
+  "A_random_repeat/second_half": {
+   "0.0": {
+    "n": 16384,
+    "nll": 0.1111719086766243,
+    "top1": 0.989013671875
+   },
+   "1.0": {
+    "n": 16384,
+    "nll": 0.11388051509857178,
+    "top1": 0.9891357421875,
+    "top1_lost": 4,
+    "top1_gained": 6
+   },
+   "2.0": {
+    "n": 16384,
+    "nll": 0.11841720342636108,
+    "top1": 0.988525390625,
+    "top1_lost": 14,
+    "top1_gained": 6
+   },
+   "3.0": {
+    "n": 16384,
+    "nll": 0.1250358670949936,
+    "top1": 0.988037109375,
+    "top1_lost": 23,
+    "top1_gained": 7
+   },
+   "6.0": {
+    "n": 16384,
+    "nll": 0.18575161695480347,
+    "top1": 0.9833984375,
+    "top1_lost": 98,
+    "top1_gained": 6
+   }
+  },
+  "B_python/copy4": {
+   "0.0": {
+    "n": 19124,
+    "nll": 0.19672824442386627,
+    "top1": 0.9471344947814941
+   },
+   "1.0": {
+    "n": 19124,
+    "nll": 0.20320723950862885,
+    "top1": 0.9464547038078308,
+    "top1_lost": 42,
+    "top1_gained": 29
+   },
+   "2.0": {
+    "n": 19124,
+    "nll": 0.2106645256280899,
+    "top1": 0.9451474547386169,
+    "top1_lost": 79,
+    "top1_gained": 41
+   },
+   "3.0": {
+    "n": 19124,
+    "nll": 0.21884165704250336,
+    "top1": 0.9436833262443542,
+    "top1_lost": 122,
+    "top1_gained": 56
+   },
+   "6.0": {
+    "n": 19124,
+    "nll": 0.2536008954048157,
+    "top1": 0.9377222061157227,
+    "top1_lost": 265,
+    "top1_gained": 85
+   }
+  },
+  "B_python/novel": {
+   "0.0": {
+    "n": 54258,
+    "nll": 2.4862871170043945,
+    "top1": 0.4872092604637146
+   },
+   "1.0": {
+    "n": 54258,
+    "nll": 2.48260760307312,
+    "top1": 0.48770686984062195,
+    "top1_lost": 156,
+    "top1_gained": 183
+   },
+   "2.0": {
+    "n": 54258,
+    "nll": 2.480105400085449,
+    "top1": 0.48881271481513977,
+    "top1_lost": 220,
+    "top1_gained": 307
+   },
+   "3.0": {
+    "n": 54258,
+    "nll": 2.479571580886841,
+    "top1": 0.4883888065814972,
+    "top1_lost": 311,
+    "top1_gained": 375
+   },
+   "6.0": {
+    "n": 54258,
+    "nll": 2.4847402572631836,
+    "top1": 0.4885731041431427,
+    "top1_lost": 569,
+    "top1_gained": 643
+   }
+  },
+  "B_python/other": {
+   "0.0": {
+    "n": 24874,
+    "nll": 0.4776807129383087,
+    "top1": 0.8603360652923584
+   },
+   "1.0": {
+    "n": 24874,
+    "nll": 0.4805010259151459,
+    "top1": 0.8595722317695618,
+    "top1_lost": 77,
+    "top1_gained": 58
+   },
+   "2.0": {
+    "n": 24874,
+    "nll": 0.4841766655445099,
+    "top1": 0.8585270047187805,
+    "top1_lost": 123,
+    "top1_gained": 78
+   },
+   "3.0": {
+    "n": 24874,
+    "nll": 0.4886240065097809,
+    "top1": 0.8578837513923645,
+    "top1_lost": 173,
+    "top1_gained": 112
+   },
+   "6.0": {
+    "n": 24874,
+    "nll": 0.5066148638725281,
+    "top1": 0.8543056845664978,
+    "top1_lost": 365,
+    "top1_gained": 215
+   }
+  },
+  "C_prose/copy4": {
+   "0.0": {
+    "n": 2931,
+    "nll": 0.23544755578041077,
+    "top1": 0.9297168254852295
+   },
+   "1.0": {
+    "n": 2931,
+    "nll": 0.24806956946849823,
+    "top1": 0.9286932945251465,
+    "top1_lost": 12,
+    "top1_gained": 9
+   },
+   "2.0": {
+    "n": 2931,
+    "nll": 0.2608463168144226,
+    "top1": 0.9280109405517578,
+    "top1_lost": 18,
+    "top1_gained": 13
+   },
+   "3.0": {
+    "n": 2931,
+    "nll": 0.27816838026046753,
+    "top1": 0.9245991110801697,
+    "top1_lost": 28,
+    "top1_gained": 13
+   },
+   "6.0": {
+    "n": 2931,
+    "nll": 0.35132551193237305,
+    "top1": 0.9092459678649902,
+    "top1_lost": 84,
+    "top1_gained": 24
+   }
+  },
+  "C_prose/novel": {
+   "0.0": {
+    "n": 41524,
+    "nll": 1.3715674877166748,
+    "top1": 0.6703593134880066
+   },
+   "1.0": {
+    "n": 41524,
+    "nll": 1.3623580932617188,
+    "top1": 0.6719728112220764,
+    "top1_lost": 297,
+    "top1_gained": 364
+   },
+   "2.0": {
+    "n": 41524,
+    "nll": 1.3599328994750977,
+    "top1": 0.6716838479042053,
+    "top1_lost": 526,
+    "top1_gained": 581
+   },
+   "3.0": {
+    "n": 41524,
+    "nll": 1.3645412921905518,
+    "top1": 0.6704074740409851,
+    "top1_lost": 754,
+    "top1_gained": 756
+   },
+   "6.0": {
+    "n": 41524,
+    "nll": 1.4118201732635498,
+    "top1": 0.6619304418563843,
+    "top1_lost": 1580,
+    "top1_gained": 1230
+   }
+  },
+  "C_prose/other": {
+   "0.0": {
+    "n": 14181,
+    "nll": 0.5028979778289795,
+    "top1": 0.8586136102676392
+   },
+   "1.0": {
+    "n": 14181,
+    "nll": 0.5107768177986145,
+    "top1": 0.8551583290100098,
+    "top1_lost": 101,
+    "top1_gained": 52
+   },
+   "2.0": {
+    "n": 14181,
+    "nll": 0.5217490792274475,
+    "top1": 0.8532543778419495,
+    "top1_lost": 178,
+    "top1_gained": 102
+   },
+   "3.0": {
+    "n": 14181,
+    "nll": 0.5370474457740784,
+    "top1": 0.8498695492744446,
+    "top1_lost": 265,
+    "top1_gained": 141
+   },
+   "6.0": {
+    "n": 14181,
+    "nll": 0.604771614074707,
+    "top1": 0.8344263434410095,
+    "top1_lost": 569,
+    "top1_gained": 226
+   }
+  }
+ },
+ "files": {
+  "python": [
+   "/usr/lib/python3.14/_ast_unparse.py",
+   "/usr/lib/python3.14/_collections_abc.py",
+   "/usr/lib/python3.14/_osx_support.py",
+   "/usr/lib/python3.14/_py_warnings.py",
+   "/usr/lib/python3.14/_pydatetime.py",
+   "/usr/lib/python3.14/_pydecimal.py",
+   "/usr/lib/python3.14/_pyio.py",
+   "/usr/lib/python3.14/_pylong.py",
+   "/usr/lib/python3.14/_strptime.py",
+   "/usr/lib/python3.14/_sysconfigdata__linux_x86_64-linux-gnu.py",
+   "/usr/lib/python3.14/_sysconfigdata__x86_64-linux-gnu.py",
+   "/usr/lib/python3.14/annotationlib.py",
+   "/usr/lib/python3.14/argparse.py",
+   "/usr/lib/python3.14/ast.py",
+   "/usr/lib/python3.14/base64.py",
+   "/usr/lib/python3.14/bdb.py",
+   "/usr/lib/python3.14/calendar.py",
+   "/usr/lib/python3.14/codecs.py",
+   "/usr/lib/python3.14/compileall.py",
+   "/usr/lib/python3.14/configparser.py",
+   "/usr/lib/python3.14/contextlib.py",
+   "/usr/lib/python3.14/dataclasses.py",
+   "/usr/lib/python3.14/difflib.py",
+   "/usr/lib/python3.14/dis.py",
+   "/usr/lib/python3.14/doctest.py",
+   "/usr/lib/python3.14/enum.py",
+   "/usr/lib/python3.14/fractions.py",
+   "/usr/lib/python3.14/ftplib.py",
+   "/usr/lib/python3.14/functools.py",
+   "/usr/lib/python3.14/gettext.py",
+   "/usr/lib/python3.14/glob.py",
+   "/usr/lib/python3.14/gzip.py",
+   "/usr/lib/python3.14/heapq.py",
+   "/usr/lib/python3.14/imaplib.py",
+   "/usr/lib/python3.14/inspect.py",
+   "/usr/lib/python3.14/ipaddress.py",
+   "/usr/lib/python3.14/locale.py",
+   "/usr/lib/python3.14/mailbox.py",
+   "/usr/lib/python3.14/mimetypes.py",
+   "/usr/lib/python3.14/modulefinder.py",
+   "/usr/lib/python3.14/ntpath.py",
+   "/usr/lib/python3.14/optparse.py",
+   "/usr/lib/python3.14/os.py",
+   "/usr/lib/python3.14/pdb.py",
+   "/usr/lib/python3.14/pickle.py",
+   "/usr/lib/python3.14/pickletools.py",
+   "/usr/lib/python3.14/platform.py",
+   "/usr/lib/python3.14/plistlib.py"
+  ]
+ }
+}

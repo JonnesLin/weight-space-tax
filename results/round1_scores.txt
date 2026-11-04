@@ -1,0 +1,27 @@
+task             cfg           n | exact b/e lost/gained | err spans b/e  err tokens b/e | hit max b/e | extra
+copy_code        10-20lines    8 |    8/8        0/0     |      0/0            0/0       |     0/0     | 
+copy_code        30-60lines    8 |    8/5        3/0     |      0/25           0/27      |     0/0     | 
+copy_one_change  10sent       10 |    2/2        0/0     |      8/8            8/8       |     0/0     | 
+copy_prose       12sent        8 |    8/8        0/0     |      0/0            0/0       |     0/0     | 
+copy_prose       25sent        8 |    6/7        0/1     |      2/1           27/26      |     0/0     | 
+copy_prose       5sent         8 |    8/8        0/0     |      0/0            0/0       |     0/0     | 
+copy_records     10lines       6 |    6/6        0/0     |      0/0            0/0       |     0/0     | 
+copy_records     25lines       6 |    6/6        0/0     |      0/0            0/0       |     0/0     | 
+copy_records     50lines       6 |    6/6        0/0     |      0/0            0/0       |     0/0     | 
+count_list       150nums       3 |    3/3        0/0     |      0/0            0/0       |     0/0     | correct prefix b=[1.0, 1.0, 1.0] e=[1.0, 1.0, 1.0]
+count_list       300nums       3 |    3/3        0/0     |      0/0            0/0       |     0/0     | correct prefix b=[1.0, 1.0, 1.0] e=[1.0, 1.0, 1.0]
+count_list       50nums        3 |    3/3        0/0     |      0/0            0/0       |     0/0     | correct prefix b=[1.0, 1.0, 1.0] e=[1.0, 1.0, 1.0]
+fewshot_format   10q           6 |    0/0        0/0     |     61/59         142/145     |     0/0     | lines right b=0.00 e=0.00
+loop_sim         n10           3 |    0/0        0/0     |     27/27          44/175     |     0/0     | steps b=[10, 10, 10] e=[10, 20, 10]; values right b=0.10 e=0.13
+loop_sim         n20           3 |    0/0        0/0     |     54/49         877/959     |     0/0     | steps b=[20, 20, 0] e=[20, 20, 20]; values right b=0.17 e=0.22
+loop_sim         n40           3 |    0/0        0/0     |    120/117        120/593     |     0/0     | steps b=[40, 40, 40] e=[40, 40, 80]; values right b=0.00 e=0.07
+repeat_sentence  n10           3 |    2/2        0/0     |      7/7           87/87      |     0/0     | count ok 2/2; counts b=[10, 10, 9] e=[10, 10, 9]
+repeat_sentence  n20           3 |    1/0        1/0     |     20/3          476/1087    |     0/0     | count ok 1/0; counts b=[20, 11, 10] e=[11, 1, 1]
+repeat_sentence  n40           3 |    0/0        0/0     |      3/3         4278/4278    |     1/1     | count ok 0/0; counts b=[1, 1, 307] e=[1, 1, 307]
+repeat_word      n10           3 |    1/1        1/1     |      2/11           5/13      |     0/0     | count ok 1/2; counts b=[11, 8, 10] e=[10, 10, 7]
+repeat_word      n100          3 |    0/0        0/0     |      4/15        6769/204     |     3/0     | count ok 0/0; counts b=[3072, 1536, 1023] e=[40, 87, 18]
+repeat_word      n30           3 |    0/0        0/0     |      3/33        7048/3029    |     3/1     | count ok 0/0; counts b=[3072, 1536, 1024] e=[37, 502, 20]
+repeat_word      n60           3 |    0/0        0/0     |      3/4         6928/330     |     3/0     | count ok 0/0; counts b=[3072, 1536, 1024] e=[28, 184, 12]
+template_code    k10           3 |    3/0        3/0     |      0/48           0/48      |     0/0     | 
+template_code    k25           3 |    3/2        1/0     |      0/46           0/46      |     0/0     | 
+TOTAL                        119 |   77/70       9/2     |    314/456      26809/11055   |    10/2    

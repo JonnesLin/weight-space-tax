@@ -1,0 +1,20 @@
+exact-match items per dose (error spans in brackets); lost/gained = paired vs c=0
+task             cfg             n |                      c=0 |                      c=1 |                      c=2 |                      c=3 |                      c=4 |                      c=5 |                      c=6
+copy_code        30-60lines     38 |         38 [   0]        |          38 [   0] -0/+0 |          38 [   0] -0/+0 |          38 [   0] -0/+0 |          35 [   4] -3/+0 |          32 [   9] -6/+0 |         25 [  38] -13/+0
+copy_code        ALL            38 |         38 [   0]        |      38 [   0] -0/+0 p=1 |      38 [   0] -0/+0 p=1 |      38 [   0] -0/+0 p=1 |   35 [   4] -3/+0 p=0.25 |  32 [   9] -6/+0 p=0.0312 |  25 [  38] -13/+0 p=0.000244
+repeat_sentence  ALL            15 |          1 [  32]        |       0 [  33] -1/+0 p=1 |       0 [  24] -1/+0 p=1 |       0 [  25] -1/+0 p=1 |       0 [  25] -1/+0 p=1 |       0 [  16] -1/+0 p=1 |       0 [  23] -1/+0 p=1
+                                   c=0: count==20 in 1/15, mean count 20.8, wrote it <=2 times in 3
+                                   c=1: count==20 in 0/15, mean count 12.5, wrote it <=2 times in 3
+                                   c=2: count==20 in 0/15, mean count 11.5, wrote it <=2 times in 4
+                                   c=3: count==20 in 0/15, mean count 9.8, wrote it <=2 times in 4
+                                   c=4: count==20 in 0/15, mean count 9.6, wrote it <=2 times in 4
+                                   c=5: count==20 in 0/15, mean count 8.7, wrote it <=2 times in 5
+                                   c=6: count==20 in 0/15, mean count 8.1, wrote it <=2 times in 5
+repeat_sentence  n20            15 |          1 [  32]        |           0 [  33] -1/+0 |           0 [  24] -1/+0 |           0 [  25] -1/+0 |           0 [  25] -1/+0 |           0 [  16] -1/+0 |           0 [  23] -1/+0
+template_code    ALL            46 |         17 [ 445]        |      16 [ 456] -1/+0 p=1 |  15 [ 419] -3/+1 p=0.625 |  11 [ 423] -7/+1 p=0.0703 |   9 [ 481] -9/+1 p=0.0215 |   8 [ 474] -10/+1 p=0.0117 |   4 [ 499] -13/+0 p=0.000244
+template_code    config         10 |          4 [   8]        |           4 [   8] -0/+0 |           5 [   5] -0/+1 |           5 [   5] -0/+1 |           5 [   5] -0/+1 |           4 [  33] -1/+1 |           2 [  55] -2/+0
+template_code    html           10 |          7 [   3]        |           6 [   4] -1/+0 |           4 [   6] -3/+0 |           0 [  10] -7/+0 |           0 [  10] -7/+0 |           0 [  10] -7/+0 |           0 [  16] -7/+0
+template_code    pytest         10 |          0 [ 274]        |           0 [ 274] -0/+0 |           0 [ 258] -0/+0 |           0 [ 258] -0/+0 |           0 [ 254] -0/+0 |           0 [ 219] -0/+0 |           0 [ 184] -0/+0
+template_code    pytest(orig)    6 |          6 [   0]        |           6 [   0] -0/+0 |           6 [   0] -0/+0 |           6 [   0] -0/+0 |           4 [  62] -2/+0 |           4 [  62] -2/+0 |           2 [  94] -4/+0
+template_code    sql            10 |          0 [ 160]        |           0 [ 170] -0/+0 |           0 [ 150] -0/+0 |           0 [ 150] -0/+0 |           0 [ 150] -0/+0 |           0 [ 150] -0/+0 |           0 [ 150] -0/+0
+hit cap per dose: {'c0': 4, 'c1': 1, 'c2': 1, 'c3': 1, 'c4': 0, 'c5': 0, 'c6': 0}

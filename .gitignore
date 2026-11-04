@@ -1,0 +1,5 @@
+models/
+data/gsm8k_train.jsonl
+__pycache__/
+*.pyc
+.venv/

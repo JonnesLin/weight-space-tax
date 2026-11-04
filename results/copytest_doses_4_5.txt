@@ -1,0 +1,27 @@
+
+layer 15: entries changed 65,260
+layer 19: entries changed 64,928
+{'A_random_repeat': 64, 'B_python': 48, 'C_prose': 32} sequences
+dose 0.0: done
+dose 4.0: done
+dose 5.0: done
+
+mean NLL (nats/token) and top-1 accuracy; diff vs base in brackets
+group/class                        n                    c=0                    c=4                    c=5
+A_random_repeat/first_half     16320     14.730[     ] 0.0%    14.750[+0.020] 0.0%    14.755[+0.026] 0.0%
+                             top-1 flips vs base: c=4: lost 0 gained 0  c=5: lost 0 gained 0
+A_random_repeat/second_half    16384     0.111[     ] 98.9%    0.135[+0.024] 98.7%    0.153[+0.042] 98.6%
+                             top-1 flips vs base: c=4: lost 35 gained 9  c=5: lost 60 gained 8
+B_python/copy4                 19124     0.197[     ] 94.7%    0.228[+0.032] 94.2%    0.240[+0.043] 94.0%
+                             top-1 flips vs base: c=4: lost 164 gained 67  c=5: lost 208 gained 76
+B_python/novel                 54258     2.486[     ] 48.7%    2.480[-0.006] 48.8%    2.482[-0.004] 48.8%
+                             top-1 flips vs base: c=4: lost 397 gained 456  c=5: lost 481 gained 542
+B_python/other                 24874     0.478[     ] 86.0%    0.494[+0.016] 85.7%    0.500[+0.022] 85.5%
+                             top-1 flips vs base: c=4: lost 232 gained 144  c=5: lost 308 gained 185
+C_prose/copy4                   2931     0.235[     ] 93.0%    0.300[+0.064] 92.2%    0.324[+0.089] 91.5%
+                             top-1 flips vs base: c=4: lost 41 gained 18  c=5: lost 63 gained 20
+C_prose/novel                  41524     1.372[     ] 67.0%    1.374[+0.003] 66.9%    1.390[+0.019] 66.6%
+                             top-1 flips vs base: c=4: lost 1008 gained 952  c=5: lost 1258 gained 1097
+C_prose/other                  14181     0.503[     ] 85.9%    0.556[+0.053] 84.6%    0.578[+0.075] 84.0%
+                             top-1 flips vs base: c=4: lost 351 gained 168  c=5: lost 465 gained 203
+saved out/copytest_c4c5.json

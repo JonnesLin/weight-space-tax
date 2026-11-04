@@ -1,0 +1,229 @@
+{
+ "doses": [
+  0.0,
+  4.0,
+  5.0
+ ],
+ "summary": {
+  "A_random_repeat/first_half": {
+   "0.0": {
+    "n": 16320,
+    "nll": 14.729659080505371,
+    "top1": 0.0
+   },
+   "4.0": {
+    "n": 16320,
+    "nll": 14.749659538269043,
+    "top1": 0.0,
+    "top1_lost": 0,
+    "top1_gained": 0
+   },
+   "5.0": {
+    "n": 16320,
+    "nll": 14.755227088928223,
+    "top1": 0.0,
+    "top1_lost": 0,
+    "top1_gained": 0
+   }
+  },
+  "A_random_repeat/second_half": {
+   "0.0": {
+    "n": 16384,
+    "nll": 0.1111719086766243,
+    "top1": 0.989013671875
+   },
+   "4.0": {
+    "n": 16384,
+    "nll": 0.1353384554386139,
+    "top1": 0.9874267578125,
+    "top1_lost": 35,
+    "top1_gained": 9
+   },
+   "5.0": {
+    "n": 16384,
+    "nll": 0.15269853174686432,
+    "top1": 0.98583984375,
+    "top1_lost": 60,
+    "top1_gained": 8
+   }
+  },
+  "B_python/copy4": {
+   "0.0": {
+    "n": 19124,
+    "nll": 0.19672824442386627,
+    "top1": 0.9471344947814941
+   },
+   "4.0": {
+    "n": 19124,
+    "nll": 0.22842763364315033,
+    "top1": 0.9420623183250427,
+    "top1_lost": 164,
+    "top1_gained": 67
+   },
+   "5.0": {
+    "n": 19124,
+    "nll": 0.23977594077587128,
+    "top1": 0.9402321577072144,
+    "top1_lost": 208,
+    "top1_gained": 76
+   }
+  },
+  "B_python/novel": {
+   "0.0": {
+    "n": 54258,
+    "nll": 2.4862871170043945,
+    "top1": 0.4872092604637146
+   },
+   "4.0": {
+    "n": 54258,
+    "nll": 2.4800422191619873,
+    "top1": 0.48829665780067444,
+    "top1_lost": 397,
+    "top1_gained": 456
+   },
+   "5.0": {
+    "n": 54258,
+    "nll": 2.4818742275238037,
+    "top1": 0.488333523273468,
+    "top1_lost": 481,
+    "top1_gained": 542
+   }
+  },
+  "B_python/other": {
+   "0.0": {
+    "n": 24874,
+    "nll": 0.4776807129383087,
+    "top1": 0.8603360652923584
+   },
+   "4.0": {
+    "n": 24874,
+    "nll": 0.49380454421043396,
+    "top1": 0.8567982912063599,
+    "top1_lost": 232,
+    "top1_gained": 144
+   },
+   "5.0": {
+    "n": 24874,
+    "nll": 0.49994829297065735,
+    "top1": 0.8553911447525024,
+    "top1_lost": 308,
+    "top1_gained": 185
+   }
+  },
+  "C_prose/copy4": {
+   "0.0": {
+    "n": 2931,
+    "nll": 0.23544755578041077,
+    "top1": 0.9297168254852295
+   },
+   "4.0": {
+    "n": 2931,
+    "nll": 0.2996475100517273,
+    "top1": 0.921869695186615,
+    "top1_lost": 41,
+    "top1_gained": 18
+   },
+   "5.0": {
+    "n": 2931,
+    "nll": 0.32409268617630005,
+    "top1": 0.9150460362434387,
+    "top1_lost": 63,
+    "top1_gained": 20
+   }
+  },
+  "C_prose/novel": {
+   "0.0": {
+    "n": 41524,
+    "nll": 1.3715674877166748,
+    "top1": 0.6703593134880066
+   },
+   "4.0": {
+    "n": 41524,
+    "nll": 1.374433159828186,
+    "top1": 0.6690106987953186,
+    "top1_lost": 1008,
+    "top1_gained": 952
+   },
+   "5.0": {
+    "n": 41524,
+    "nll": 1.3903089761734009,
+    "top1": 0.6664820313453674,
+    "top1_lost": 1258,
+    "top1_gained": 1097
+   }
+  },
+  "C_prose/other": {
+   "0.0": {
+    "n": 14181,
+    "nll": 0.5028979778289795,
+    "top1": 0.8586136102676392
+   },
+   "4.0": {
+    "n": 14181,
+    "nll": 0.5558758974075317,
+    "top1": 0.8457090258598328,
+    "top1_lost": 351,
+    "top1_gained": 168
+   },
+   "5.0": {
+    "n": 14181,
+    "nll": 0.5782999396324158,
+    "top1": 0.8401381969451904,
+    "top1_lost": 465,
+    "top1_gained": 203
+   }
+  }
+ },
+ "files": {
+  "python": [
+   "/usr/lib/python3.14/_ast_unparse.py",
+   "/usr/lib/python3.14/_collections_abc.py",
+   "/usr/lib/python3.14/_osx_support.py",
+   "/usr/lib/python3.14/_py_warnings.py",
+   "/usr/lib/python3.14/_pydatetime.py",
+   "/usr/lib/python3.14/_pydecimal.py",
+   "/usr/lib/python3.14/_pyio.py",
+   "/usr/lib/python3.14/_pylong.py",
+   "/usr/lib/python3.14/_strptime.py",
+   "/usr/lib/python3.14/_sysconfigdata__linux_x86_64-linux-gnu.py",
+   "/usr/lib/python3.14/_sysconfigdata__x86_64-linux-gnu.py",
+   "/usr/lib/python3.14/annotationlib.py",
+   "/usr/lib/python3.14/argparse.py",
+   "/usr/lib/python3.14/ast.py",
+   "/usr/lib/python3.14/base64.py",
+   "/usr/lib/python3.14/bdb.py",
+   "/usr/lib/python3.14/calendar.py",
+   "/usr/lib/python3.14/codecs.py",
+   "/usr/lib/python3.14/compileall.py",
+   "/usr/lib/python3.14/configparser.py",
+   "/usr/lib/python3.14/contextlib.py",
+   "/usr/lib/python3.14/dataclasses.py",
+   "/usr/lib/python3.14/difflib.py",
+   "/usr/lib/python3.14/dis.py",
+   "/usr/lib/python3.14/doctest.py",
+   "/usr/lib/python3.14/enum.py",
+   "/usr/lib/python3.14/fractions.py",
+   "/usr/lib/python3.14/ftplib.py",
+   "/usr/lib/python3.14/functools.py",
+   "/usr/lib/python3.14/gettext.py",
+   "/usr/lib/python3.14/glob.py",
+   "/usr/lib/python3.14/gzip.py",
+   "/usr/lib/python3.14/heapq.py",
+   "/usr/lib/python3.14/imaplib.py",
+   "/usr/lib/python3.14/inspect.py",
+   "/usr/lib/python3.14/ipaddress.py",
+   "/usr/lib/python3.14/locale.py",
+   "/usr/lib/python3.14/mailbox.py",
+   "/usr/lib/python3.14/mimetypes.py",
+   "/usr/lib/python3.14/modulefinder.py",
+   "/usr/lib/python3.14/ntpath.py",
+   "/usr/lib/python3.14/optparse.py",
+   "/usr/lib/python3.14/os.py",
+   "/usr/lib/python3.14/pdb.py",
+   "/usr/lib/python3.14/pickle.py",
+   "/usr/lib/python3.14/pickletools.py",
+   "/usr/lib/python3.14/platform.py",
+   "/usr/lib/python3.14/plistlib.py"
+  ]
+ }
+}

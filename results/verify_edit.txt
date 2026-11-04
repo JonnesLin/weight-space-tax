@@ -1,0 +1,54 @@
+header bytes: base=59840 edited=60272
+base __metadata__: None
+edited __metadata__: {'format': 'pt'}
+tensors: base=488 edited=488 only_base=[] only_edited=[]
+key prefixes: ['model.language_model', 'model.visual', 'mtp', 'mtp.fc', 'mtp.norm', 'mtp.pre_fc_norm_embedding', 'mtp.pre_fc_norm_hidden']
+total params compared: 873,438,784; dtypes: ['BF16', 'F32']
+tensors that differ: 2
+
+== model.language_model.layers.15.mlp.down_proj.weight  shape=(1024, 3584) dtype=torch.bfloat16  differing entries: 65,260 / 3,670,016
+   columns (dim1) with any diff: 64 / 3584;  rows (dim0) with any diff: 1024 / 1024
+   per-column differing entries: min=1008 median=1021 max=1024 (column length 1024)
+   entries in those columns: 65,536; differing: 65,260
+   |delta| max=1.464e-01  ||delta||_F=1.7489e+00  ||W_cols||_F=2.0580e+00
+
+== model.language_model.layers.19.mlp.down_proj.weight  shape=(1024, 3584) dtype=torch.bfloat16  differing entries: 64,928 / 3,670,016
+   columns (dim1) with any diff: 64 / 3584;  rows (dim0) with any diff: 1023 / 1024
+   per-column differing entries: min=985 median=1015 max=1023 (column length 1024)
+   entries in those columns: 65,536; differing: 64,928
+   |delta| max=2.148e-01  ||delta||_F=1.3988e+00  ||W_cols||_F=2.2474e+00
+
+== sha256 of raw bf16 bytes of changed tensors
+   base   model.language_model.layers.15.mlp.down_proj.weight: ef60d2c687bab19464dca9c8bfd7777e46ad226df0c9e25643b0bab04b5a1cca  OK (matches published hash)
+   edited model.language_model.layers.15.mlp.down_proj.weight: 82e2d733ea64feaeb4af93a1e065641d3df98b494a8b7576ef2f52e90fe2ee53  OK (matches published hash)
+   base   model.language_model.layers.19.mlp.down_proj.weight: 638eedeb701b94aa861f4438e615c07ec6c60ee703db1bfee2de577bb6498c3e  OK (matches published hash)
+   edited model.language_model.layers.19.mlp.down_proj.weight: 8ef3c61bc36af113ad58e89dbb0a4a14dcba5a45cb750c15ab515c82ddd12eb2  OK (matches published hash)
+   changed set == published set: True
+
+== rank-1 check (deltas restricted to the edited columns)
+   layer 15: shape=(1024, 64) top singular values: ['1.7489e+00', '9.8741e-04', '9.4856e-04', '8.6931e-04', '8.0930e-04', '7.4802e-04', '7.0237e-04', '6.7892e-04']
+      s2/s1=5.646e-04  energy in s1: 0.999994
+      least-squares strength c in w <- w - c u(u^T w): c = 6.00032; per-column -delta_u/(u^T w): min=5.9976 median=6.0004 max=6.0073
+      u^T w after/before (median over cols) = -5.0004  (1 - c; 0 would mean 'removed')
+      model c=1.0000: ||delta + c u u^T w||/||delta|| = 8.333e-01; re-simulated bf16 == edited for 0.42% of entries, within 1 ulp 1.53%
+      model c=6.0000: ||delta + c u u^T w||/||delta|| = 2.348e-03; re-simulated bf16 == edited for 90.96% of entries, within 1 ulp 98.53%
+      model c=6.0003: ||delta + c u u^T w||/||delta|| = 2.347e-03; re-simulated bf16 == edited for 91.04% of entries, within 1 ulp 98.55%
+      |u^T w| on edited cols: before mean=3.0609e-02 max=8.8269e-02; after mean=1.531e-01 max=4.414e-01
+      edited cols vs top-64 by |u^T w|: overlap 31; by +u^T w: 21; by -u^T w: 21
+      rank of edited cols by |u^T w| (0=largest): max rank 1113
+   layer 19: shape=(1024, 64) top singular values: ['1.3988e+00', '9.0126e-04', '8.1358e-04', '7.4435e-04', '7.0531e-04', '6.8580e-04', '6.5898e-04', '6.5307e-04']
+      s2/s1=6.443e-04  energy in s1: 0.999991
+      least-squares strength c in w <- w - c u(u^T w): c = 6.00017; per-column -delta_u/(u^T w): min=5.9911 median=6.0001 max=6.0062
+      u^T w after/before (median over cols) = -5.0001  (1 - c; 0 would mean 'removed')
+      model c=1.0000: ||delta + c u u^T w||/||delta|| = 8.333e-01; re-simulated bf16 == edited for 0.93% of entries, within 1 ulp 2.41%
+      model c=6.0000: ||delta + c u u^T w||/||delta|| = 2.944e-03; re-simulated bf16 == edited for 90.59% of entries, within 1 ulp 98.41%
+      model c=6.0002: ||delta + c u u^T w||/||delta|| = 2.944e-03; re-simulated bf16 == edited for 90.60% of entries, within 1 ulp 98.40%
+      |u^T w| on edited cols: before mean=2.4014e-02 max=1.0676e-01; after mean=1.201e-01 max=5.337e-01
+      edited cols vs top-64 by |u^T w|: overlap 18; by +u^T w: 10; by -u^T w: 22
+      rank of edited cols by |u^T w| (0=largest): max rank 2419
+
+== cos(u_15, u_19) = -0.849005  (|cos|=0.849005) -> DIFFERENT directions
+   both layers stacked: shape=(1024, 128) top singular values: ['2.1578e+00', '5.9901e-01', '1.0699e-03', '1.0098e-03', '9.4195e-04', '8.8881e-04', '8.5701e-04', '8.2256e-04']
+      s2/s1=2.776e-01  energy in s1: 0.928448
+
+saved /home/jinho/wsp_qwen/out/edit_direction.npz
